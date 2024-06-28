@@ -1,0 +1,70 @@
+
+
+.marqueEffect .stripe{
+    width: 120%;
+overflow: hidden;
+    /* background: #ff2e2e; */
+    /* padding: 2vw 0; */
+background-color: wheat;
+    position: relative;
+    border-top: 1px solid rgba(255, 255, 255, 0.395);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.379);
+}
+
+.marqueEffect .cnt{
+    /* transform: translateX(-20%); */
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+ 
+.marqueEffect .bgcnt{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    height: 100%;    
+    opacity: 0;
+}
+
+  .marqueEffect .elem{
+    color: #fff;
+    display: flex;
+    padding:   2vw ;
+        /* margin: 2vw 0; */
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-shrink: 0;
+    border-left: 1px solid rgba(255, 255, 255, 0.179);
+
+}
+ 
+.marqueEffect .photo{
+    height: 8rem;
+    width:  8rem;
+    /* background: #b80808; */
+    border-radius: 20px;
+} 
+.marqueEffect .photo img{
+    height: 100% ;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+.marqueEffect .cnt2{
+    transform: translateX(-50%);
+}
+
+
+
+.marqueEffect .marquee{
+    rotate: -5deg;
+   
+}

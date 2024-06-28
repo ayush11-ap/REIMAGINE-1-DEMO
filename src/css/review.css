@@ -1,0 +1,99 @@
+
+@font-face {
+  font-family: 'HelveticaNeueL';
+  src: url('./fonts/HelveticaNeueLight.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueR';
+  src: url('./fonts/HelveticaNeueRoman.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MontserratM';
+  src: url('./fonts/Montserrat-Medium.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'MontserratSB';
+  src: url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'MontserratB';
+  src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+.swiper-slide{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.customer-msg{
+  position: relative;
+  border-bottom:2px solid #595c7c39;
+  width: 100%;
+  border-radius: 1rem;
+}
+.card-msg{
+  max-height: 100%;
+  width: 90%;
+  border-radius: 1rem;
+  border: 1px solid #595c7c39;
+  padding: 1rem 0.5rem;
+  box-shadow: 2px 2px 3px #595c7c39;
+}
+.customer-msg p{
+  font-size: large;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 3.5rem 2.5rem;
+  background: #fff;
+  border-radius: 0.8rem;
+}
+.customer-msg p::before{
+  content: '\f10d';
+  position: absolute;
+  top: 0;
+  left: 1.2rem;
+  font-size: 3rem;
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: #51d8f975
+}
+.customer-msg p::after{
+  content: '\f10e';
+  position: absolute;
+  bottom: 0;
+  right: 1.2rem;
+  font-size: 3rem;
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  color: #b2f129a0
+}
+
+.customer-details{
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.user img{
+  background: #595c7c39;
+  border-radius: 50%;
+}
+
+.user-name h1{
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: 800;
+  color:#3F3F46 ;
+}
+
+.user-name h1:nth-child(2){
+  font-weight: 400;
+}
