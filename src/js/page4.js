@@ -22,7 +22,7 @@ let Process_Timeline;
 
    Process_Timeline = gsap.timeline({
     scrollTrigger: {
-      trigger: ".page2",
+      trigger: ".page4",
       // markers: true,
           start: "top top",
       end:"bottom -50%" ,

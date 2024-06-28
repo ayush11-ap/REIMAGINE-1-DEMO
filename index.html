@@ -14,9 +14,6 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
 
-
-
-    <!--  home -->
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
     rel="stylesheet"
@@ -28,9 +25,11 @@
 
 
 </head>
-<body>
+
+<!--  by deafult body overflow hidden -->
+<body class="overflow-hidden">
     
-  <div class="loder z-[500]  bg-black  select-none  absolute h-full flex justify-center items-center w-screen overflow-hidden">
+  <div class="loder  z-[500] w-screen  bg-black  select-none  absolute h-full flex justify-center items-center  overflow-hidden">
 
   <div class="content z-[100] absolute  flex flex-col  sm:leading-[250px] leading-[100px] sm:-rotate-[55deg]  -rotate-[40deg]  sm:top-[39%] top-[50%] left-1/2   -translate-x-1/2 -translate-y-1/2 ">
 
@@ -44,7 +43,7 @@
   </div>
   </div> 
 
-    <div class="main bg-slate-100 w-screen overflow-hidden    ">
+    <div class="main  bg-slate-100  overflow-hidden    ">
         
 
       
@@ -53,7 +52,7 @@
 
         <div  class="home z-10   absolute w-screen h-screen   overflow-hidden ">
   
-          <div class="home-overlay h-[150vw] w-[150vw] bg-violet-700  relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
+          <div class="home-overlay h-[250vw] w-[250vw] sm:h-[150vw] sm:w-[150vw] bg-violet-700  relative top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center">
     
             <div class="  innerHome h-screen w-screen relative bg-amber-50">
 
@@ -125,41 +124,36 @@
         </div>
         
         
-        <!--  all css is in coustom.css -->
-          <!-- <div class="allellem opacity-0 features">
-  
-              <div class="b1 box">
-                 <div class="overlay"></div>
-    <div class="cnt">
-      <h2>IMPROVED AIR QUALITY</h2>
-      <p>Our 100% eco-friendly natural incense sticks are known to purify and refresh the air plus you will be blissed out by the scent of it.</p>
-    </div>
-    
-    
-              </div>
-              <div class="b2 box">
-                  <div class="overlay"></div>
-                  <div class="cnt">
-                      <h2>STRESS RELIEF & RELAXATION</h2>
-                      <p>The fragrances we have chosen for your employees will offer a wide range of benefits, including reducing stress and increasing focus.</p>
-                    </div>
-              </div>
-              <div class="b3 box">
-                  <div class="overlay"></div>
-                  <div class="cnt">
-                      <h2>RICH AROMATHERAPY</h2>
-                      <p>The fragrances we have chosen for your employees will offer a wide range of benefits, including reducing stress and increasing focus.</p>
-                    </div>
-              </div>
-          </div> -->
-    
-    
+        <div class="allellem h-4/5  flex sm:w-screen w-auto   items-center justify-center">
+          <div class="b1 box relative h-5 w-5 rounded-full bg-cover opacity-50 flex justify-center items-center overflow-hidden border-none" style="background-image: url('./assets/air.jpg');">
+            <div class="overlay absolute inset-0 bg-black bg-opacity-55 rounded-full"></div>
+            <div class="cnt scale-50 opacity-0 p-5 text-center">
+              <h2 class="text-white font-black sm:text-[2.5vw] text-[6vw]">IMPROVED AIR QUALITY</h2>
+              <p class="text-white hidden sm:flex font-normal tracking-wider px-7">Our 100% eco-friendly natural incense sticks are known to purify and refresh the air plus you will be blissed out by the scent of it.</p>
+            </div>
+          </div>
+          <div class="b2 box relative h-5 w-5 rounded-full bg-cover opacity-50 flex justify-center items-center overflow-hidden border-none" style="background-image: url('./assets/stress.jpg');">
+            <div class="overlay absolute inset-0 bg-black bg-opacity-55 rounded-full"></div>
+            <div class="cnt scale-50 opacity-0 p-5 text-center">
+              <h2 class="text-white font-black sm:text-[2.5vw] text-[6vw]">STRESS RELIEF & RELAXATION</h2>
+              <p class="text-white hidden sm:flex font-normal tracking-wider px-7">The fragrances we have chosen for your employees will offer a wide range of benefits, including reducing stress and increasing focus.</p>
+            </div>
+          </div>
+          <div class="b3 box  relative h-5 w-5 rounded-full bg-cover opacity-50 flex justify-center items-center overflow-hidden border-none" style="background-image: url('./assets/aromatherpy.jpg');">
+            <div class="overlay absolute inset-0 bg-black bg-opacity-55 rounded-full"></div>
+            <div class="cnt scale-50 opacity-0 p-5 text-center">
+              <h2 class="text-white font-black sm:text-[2.5vw] text-[6vw]">RICH AROMATHERAPY</h2>
+              <p class="text-white hidden sm:flex  font-normal tracking-wider px-7">The fragrances we have chosen for your employees will offer a wide range of benefits, including reducing stress and increasing focus.</p>
+            </div>
+          </div>
+        </div>
+        
       </div>
-<!--     
+    
 
       
 
-      <div class="details px-10 w-screen h-screen flex flex-col gap-5 items-center justify-around lg:flex lg:flex-row lg:h-[50vh] lg:w-[100vw] bg-amber-100">
+      <div class="details px-10 sm:pb-0 pb-10 w-screen h-screen flex flex-col gap-5 items-center justify-around lg:flex lg:flex-row lg:h-[50vh] lg:w-[100vw] bg-amber-100">
         <svg class="h-[30vh] lg:h-full lg:relative lg:-left-6" width="402" height="406" viewBox="0 0 588 566" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g id="Dhoop-illustration">
             <g id="Group">
@@ -369,114 +363,119 @@
     
 
 
-        <div class="page2 w-screen h-[110vh] ">
-          <div class="process relative p-4 h-[108vh] w-full">
-
-            <h1 class="text-9xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">The process of Making Agarbatti</h1>
-           
-           
-                   <div class="cnt h-full  w-full flex justify-center items-center">
-           
-           
-           
-                     <div class="left h-full w-1/2">
-                       
-                       <div class="one lineContainer    border-r-2  w-full relative h[20%]">
-                         <img
-                         src="./assets/1-removebg-preview.png"
-                         class=" opacity-0  right-[4%] absolute scale-0 h-[220px] img1"
-                         alt=""
-                       />
-           
-                         <div class="circle z-10 w-5 h-5 translate-x-1/2 translate-y-1/2 absolute right-0 bottom-[20%]  rounded-full flex justify-center items-center bg-yellow-400 ">
-                           <p class="opacity-0">1</p>
-                         </div>
-                       </div>
-           
-                       <div class="one lineContainer  border-r-2  w-full h-[0%] relative">
-                         <div class="circle z-10 w-5 h-5 translate-x-1/2 translate-y-1/2 absolute right-0 bottom-[20%]  rounded-full flex justify-center items-center bg-yellow-400 ">
-                           <p class="opacity-0">2</p>
-                         </div>
-                       </div>
-           
-           
-                       <div class="one lineContainer  border-r-2  w-full relative  -[20%]">
-           
-                         <img
-                         src="./assets/3-removebg-preview.png"
-                         class=" opacity-0 scale-0 h-[220px] img3 absolute right-[4%]"
-                         alt=""
-                       />
-                       <div class="circle z-10 w-5 h-5 translate-x-1/2 translate-y-1/2 absolute right-0 bottom-[20%]  rounded-full flex justify-center items-center bg-yellow-400 ">
-                         <p class="opacity-0">3</p>
-                       </div>
-                       </div>
-           
-           
-                       <div class="one lineContainer  border-r-2  w-full  h-[0%] relative">
-                   
-                         <div class="circle z-10 w-5 h-5 translate-x-1/2 translate-y-1/2 absolute right-0 bottom-[20%]  rounded-full flex justify-center items-center bg-yellow-400 ">
-                           <p class="opacity-0">4</p>
-                         </div>
-                       </div>
-           
-           
-           
-           
-           
-                       <div class="one lineContainer  border-r-2  w-full h-[0%] relative">
-                         <img
-                         src="https://www.helpusgreen.com/cdn/shop/products/product-61_1024x1024@2x.jpg?v=1679396408"
-                         class=" opacity-0 scale-0 h-[220px] img5 absolute top-[-20%] right-[4%]"
-                         alt=""
-                       />
-           
-                       <div class="circle z-10 w-5 h-5 translate-x-1/2 translate-y-1/2 absolute right-0 bottom-[20%]  rounded-full flex justify-center items-center bg-yellow-400 ">
-                         <p class="opacity-0">5</p>
-                       </div>
-                       </div>
-                     </div>
-           
-           
-           
-           
-           
-           
-                     <div class="right w-1/2 h-full">
-                       <div class="one pl-[2%]  w-full h-[20%]">
-                        
-                       </div>
-           
-                       <div class="one pl-[2%]  w-full h-[20%]">
-                         <img
-                           src="./assets/2-removebg-preview.png"
-                           class=" opacity-0 scale-0 h-[220px] img2"
-                           alt=""
-                         />
-                       </div>
-           
-                       <div class="one pl-[2%]  w-full h-[20%]">
-                        
-                       </div>
-           
-                       <div class="one pl-[2%]  w-full h-[20%]">
-           
-                         <img
-                         src="./assets/Screenshot_2024-06-26_141743-removebg-preview.png" 
-                         class="h-[220px] scale-0 opacity-0 img4 "
-                         alt=""
-                       />
-                       </div>
-           
-                       <div class="one pl-[2%]  w-full h-[20%]"></div>
-           
-                     </div>
-           
-           
-                   </div>
-                 </div>
-        </div>
       
+            <div class="page4 w-screen h-[110vh] ">
+              <div class="process relative p-4 h-[108vh] w-full">
+    
+                <h1 class="text-9xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 ">The process of Making Agarbatti</h1>
+               
+               
+                       <div class="cnt h-full  w-full flex justify-center items-center">
+               
+               
+               
+                         <div class="left h-full w-1/2">
+                           
+                           <div class="one lineContainer    border-r-2  w-full relative h[20%]">
+                             <img
+                             src="./assets/1-removebg-preview.png"
+                             class=" opacity-0  right-[4%] absolute scale-0 h-[220px] img1"
+                             alt=""
+                           />
+               
+                             <div class="circle z-10 w-5 h-5 translate-x-1/2 translate-y-1/2 absolute right-0 bottom-[20%]  rounded-full flex justify-center items-center bg-yellow-400 ">
+                               <p class="opacity-0">1</p>
+                             </div>
+                           </div>
+               
+                           <div class="one lineContainer  border-r-2  w-full h-[0%] relative">
+                             <div class="circle z-10 w-5 h-5 translate-x-1/2 translate-y-1/2 absolute right-0 bottom-[20%]  rounded-full flex justify-center items-center bg-yellow-400 ">
+                               <p class="opacity-0">2</p>
+                             </div>
+                           </div>
+               
+               
+                           <div class="one lineContainer  border-r-2  w-full relative  -[20%]">
+               
+                             <img
+                             src="./assets/3-removebg-preview.png"
+                             class=" opacity-0 scale-0 h-[220px] img3 absolute right-[4%]"
+                             alt=""
+                           />
+                           <div class="circle z-10 w-5 h-5 translate-x-1/2 translate-y-1/2 absolute right-0 bottom-[20%]  rounded-full flex justify-center items-center bg-yellow-400 ">
+                             <p class="opacity-0">3</p>
+                           </div>
+                           </div>
+               
+               
+                           <div class="one lineContainer  border-r-2  w-full  h-[0%] relative">
+                       
+                             <div class="circle z-10 w-5 h-5 translate-x-1/2 translate-y-1/2 absolute right-0 bottom-[20%]  rounded-full flex justify-center items-center bg-yellow-400 ">
+                               <p class="opacity-0">4</p>
+                             </div>
+                           </div>
+               
+               
+               
+               
+               
+                           <div class="one lineContainer  border-r-2  w-full h-[0%] relative">
+                             <img
+                             src="https://www.helpusgreen.com/cdn/shop/products/product-61_1024x1024@2x.jpg?v=1679396408"
+                             class=" opacity-0 scale-0 h-[220px] img5 absolute top-[-20%] right-[4%]"
+                             alt=""
+                           />
+               
+                           <div class="circle z-10 w-5 h-5 translate-x-1/2 translate-y-1/2 absolute right-0 bottom-[20%]  rounded-full flex justify-center items-center bg-yellow-400 ">
+                             <p class="opacity-0">5</p>
+                           </div>
+                           </div>
+                         </div>
+               
+               
+               
+               
+               
+               
+                         <div class="right w-1/2 h-full">
+                           <div class="one pl-[2%]  w-full h-[20%]">
+                            
+                           </div>
+               
+                           <div class="one pl-[2%]  w-full h-[20%]">
+                             <img
+                               src="./assets/2-removebg-preview.png"
+                               class=" opacity-0 scale-0 h-[220px] img2"
+                               alt=""
+                             />
+                           </div>
+               
+                           <div class="one pl-[2%]  w-full h-[20%]">
+                            
+                           </div>
+               
+                           <div class="one pl-[2%]  w-full h-[20%]">
+               
+                             <img
+                             src="./assets/Screenshot_2024-06-26_141743-removebg-preview.png" 
+                             class="h-[220px] scale-0 opacity-0 img4 "
+                             alt=""
+                           />
+                           </div>
+               
+                           <div class="one pl-[2%]  w-full h-[20%]"></div>
+               
+                         </div>
+               
+               
+                       </div>
+                     </div>
+            </div>
+          
+<!-- 
+
+
+
 
         <div class="our_Collections relative h-screen w-screen ">
 
