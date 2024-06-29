@@ -10,6 +10,9 @@ export default {
         'center-center': 'center center',
         'right-center': 'right center',
       },
+      transform: {
+        'stretch-y': 'scaleY(1.5)',
+      },
     },
   },
   plugins: [
@@ -149,7 +152,7 @@ export default {
           backfaceVisibility: 'hidden',
         },
         // Custom Background Color
-    
+
       };
 
       addUtilities(newUtilities, ['responsive', 'hover']);

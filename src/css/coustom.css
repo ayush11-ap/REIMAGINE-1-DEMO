@@ -3,28 +3,28 @@
 } */
 
 @font-face {
-    font-family: 'HelveticaNeueL';
-    src: url('./fonts/HelveticaNeueLight.otf') format('opentype');
+  font-family: 'HelveticaNeueL';
+  src: url('./fonts/HelveticaNeueLight.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'HelveticaNeueR';
-    src: url('./fonts/HelveticaNeueRoman.otf') format('opentype');
+  font-family: 'HelveticaNeueR';
+  src: url('./fonts/HelveticaNeueRoman.otf') format('opentype');
 }
 
 @font-face {
-    font-family: 'MontserratM';
-    src: url('./fonts/Montserrat-Medium.ttf') format('opentype');
+  font-family: 'MontserratM';
+  src: url('./fonts/Montserrat-Medium.ttf') format('opentype');
 }
 
 @font-face {
-    font-family: 'MontserratSB';
-    src: url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
+  font-family: 'MontserratSB';
+  src: url('./fonts/Montserrat-SemiBold.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'MontserratB';
-    src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
+  font-family: 'MontserratB';
+  src: url('./fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
 
@@ -35,7 +35,7 @@
 
 
 .linkHoverEffect{
-  position: relative;
+position: relative;
 }
 .linkHoverEffect::after{
 content: ""; 
@@ -63,136 +63,57 @@ width:100%;
 
 
 
+/* // process */
 
 
-.allellem{
-    height: 80vh;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-   
-
-}
-
-
-.allellem .box{
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    opacity:0.5 ;
-     background-size: contain;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     overflow: hidden;
-     position: relative;
-     border: none;
-}
-.allellem .b1{
-    background: url(./assets/air.jpg);
-    background-size: contain;
-}
-
-.allellem .b2{
-    background: url(./assets/stress.jpg);
-    background-size: cover ;
-    background-repeat: no-repeat;
-    background-position: center;
-    }
-    
-    .allellem .b3{
-        background: url(./assets/aromatherpy.jpg);
-        background-size: contain ;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover ;
-}
-
-.allellem .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.55); /* यहाँ rgba का उपयोग करके अपारदर्शिता सेट करें */
-  }
-
-  .allellem .cnt{
-    padding: 0px 20px;
-    scale: 0.5;
-    opacity:0
-  }
-
-  .allellem .cnt h2 {
-    color: white;
-    text-align: center;
-    font-weight: 900;
-    font-size: 2.5vw;
-  }
-  .allellem .cnt p {
-    color: white;
-    font-weight: 400;
-    text-align: center;
-    letter-spacing: 2px;
-    padding: 0px 30px;
-  }
-
-
-
-
-  /* // process */
-
-
-   .process .left img {
-    transform: rotateY(-90deg)  perspective(1010px);
-    transform-origin: right center;
-    
+ .process .left img {
+  transform: rotateY(-90deg)  perspective(1010px);
+  transform-origin: right center;
+  
 }
 
 .process  .right img {
-    transform: rotateY(90deg)  perspective(1010px);
-    transform-origin: left center;
-    
+  transform: rotateY(90deg)  perspective(1010px);
+  transform-origin: left center;
+  
 }
 
 
 /* ! best selling product  */
 
 @font-face {
-    font-family: 'soyo';
-    src: url(./fonts/SohneBreit-Buch-a227471a.ttf);
-  }
-  .best_selling_product .midd h1 {
-    font-family: 'soyo';
-    user-select: none;
-    white-space: nowrap;
-    
-  }
-
-
-  /* ! door section */
+  font-family: 'soyo';
+  src: url(./fonts/SohneBreit-Buch-a227471a.ttf);
+}
+.best_selling_product .midd h1 {
+  font-family: 'soyo';
+  user-select: none;
+  white-space: nowrap;
   
-  @font-face {
-    font-family: 'Barlow';
-    src: url(./fonts/OPTIBerling-BoldItalicAg.otf) format('opentype');
-  }
+}
 
-  @font-face {
-    font-family: 'yoyo';
-    src: url(./fonts/OPTIBerling-BoldItalicAg.otf) format('opentype');
-  }
-  
-  .door_Section .p{
+
+
+
+/* ! door section */
+
+@font-face {
+  font-family: 'Barlow';
+  src: url(./fonts/OPTIBerling-BoldItalicAg.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'yoyo';
+  src: url(./fonts/OPTIBerling-BoldItalicAg.otf) format('opentype');
+}
+
+.door_Section .p{
 font-family: Barlow;
 }
- .door_Section  .heading{
-    font-family:yoyo ;
+.door_Section  .heading{
+  font-family:yoyo ;
 
-;
-    
 }
- .door_Section .subheading{
-    font-family: montserrat;
+.door_Section .subheading{
+  font-family: montserrat;
 }
