@@ -13,7 +13,7 @@ elems.forEach((el,idx) => {
     el.addEventListener("mouseenter",(e) => {
     
         gsap.to(el,{
-            opacity:1,
+            opacity:0.8,
             duration:0.3,
         })
         gsap.to(arrows[idx],{
