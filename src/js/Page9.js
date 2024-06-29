@@ -14,10 +14,10 @@
                 
                 let link = document.createElement('a');
                 link.classList.add('photo');
-                link.setAttribute('href', e.instaUrl);
+                link.setAttribute('href', "#");
                 
                 let img = document.createElement('img');
-                img.src = e.cldurl;
+                img.src = e;
                 
                 link.appendChild(img);
                 elem.appendChild(link);

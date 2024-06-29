@@ -1,7 +1,7 @@
 
 import '../css/coustom.css'
 import '../css/Home.css'
-// import '../css/ourCollection.css'
+import '../css/ourCollection.css'
 import '../css/review.css'
 import '../css/marquee.css'
 import '../css/footer.css'
@@ -62,7 +62,7 @@ let masterProf = gsap.timeline()
   
   window.addEventListener('scroll', function() {
 
-    const buffer = 2;
+    const buffer = 4;
     if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - buffer)) {
 
         window.scrollTo(0, document.body.scrollHeight - window.innerHeight - buffer);
