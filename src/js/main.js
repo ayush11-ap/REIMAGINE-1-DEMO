@@ -55,7 +55,21 @@ let masterProf = gsap.timeline()
   .add(marqueetl)
 
 
- 
+
+
+
+
+  
+  window.addEventListener('scroll', function() {
+
+    const buffer = 2;
+    if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - buffer)) {
+
+        window.scrollTo(0, document.body.scrollHeight - window.innerHeight - buffer);
+    }
+});
+
+
       
           
   
