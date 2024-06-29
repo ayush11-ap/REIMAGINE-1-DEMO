@@ -15,8 +15,16 @@
     }
   })
   
-  bsptl.to("h1", {
-    x:"-76%",
+  bsptl.to(".best_selling_product h1", {
+    x: () => {
+      if (window.innerWidth <= 620) {
+         return "-90%"
+      } else {
+         return "-77%"
+       }
+
+    },
+    ease:"linear"
     // duration:
   })
   

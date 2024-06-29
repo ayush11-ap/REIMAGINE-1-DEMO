@@ -10,6 +10,9 @@ export default {
         'center-center': 'center center',
         'right-center': 'right center',
       },
+      transform: {
+        'stretch-y': 'scaleY(1.5)',
+      },
     },
   },
   plugins: [
