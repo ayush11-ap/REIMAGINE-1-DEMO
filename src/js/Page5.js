@@ -1,67 +1,75 @@
-function ourCollection() {
-    function selectAll(elem) {
-      return document.querySelectorAll(elem)
-    }
+ export function ourCollection() {
+  let elems = document.querySelectorAll(".ourBox")
+let arrows = document.querySelectorAll(".arrow")
+
+
+
+let overlay = document.querySelector('.our_overlay')
+let overlayImgs = document.querySelectorAll('.our_overlay .img ')
+
+
+
+elems.forEach((el,idx) => {
+    el.addEventListener("mouseenter",(e) => {
     
-    function select(elem) {
-      return document.querySelector(elem)
-    }
-    
-    
-    let elems = selectAll('.our_Collections  img');
-    
-    
-    let box = select('.our_Collections .box')
-    
-      let our_Collections = document.querySelector(".our_Collections")
-    
-      our_Collections.addEventListener('mousemove', (e) => {
-          
-    
-      gsap.to(box, {
-          left: e.clientX,
-          top: e.clientY,
-          ease: "expo.easeInOut",
-          duration: 0.5,
-      })
-      
-    })
-    
-    
-    
-    selectAll('.container').forEach((elem) => {
-      elem.addEventListener('mouseenter', (e ,idx) => { 
-      
-          let percent = elem.getAttribute('data-percent');
-          gsap.to(elems, {
-              y:percent,
-              ease:"Power4.easeOut",
-              duration: 1,
-              delay:0.1 
-              
-          })
-          gsap.to(box, {
-              opacity: 1,
-               ease:"Power4.easeOut"
-     })
-    
-      })
-      elem.addEventListener('mouseleave', (e ,idx) => { 
-      
-          let percent = elem.getAttribute('data-percent');
+        gsap.to(el,{
+            opacity:1,
+            duration:0.3,
+        })
+        gsap.to(arrows[idx],{
+            rotation:-45,
+            duration:0.3
+        })
+        
+
+
+
+
+
+        let percent = el.getAttribute('data-percent');
+
+
+
+
+
+        gsap.to(overlay, {
          
-          gsap.to(box, {
-              opacity: 0,
-              ease:"Power4.easeOut",
-     })
-    
-      })
-    
-    
-    
+        opacit:1,
+            ease: "expo.easeInOut",
+            duration: 0.5,
+        })
+
+      
+        gsap.to(overlayImgs, {
+            y:percent,
+            ease:"Power4.easeOut",
+            duration: 1,
+            delay:0.1 
+            
+        })
+        gsap.to(overlay, {
+            opacity: 1,
+             ease:"Power4.easeOut"
+   })
+
     })
+    el.addEventListener("mouseleave",(e) => {
     
-    
-  }
+        gsap.to(el,{
+            opacity:0.6,
+            duration:0.3,
+        })
+        gsap.to(arrows[idx],{
+            rotation:0,
+            duration:0.3
+        })
+
+        gsap.to(overlay, {
+            opacity: 0,
+            ease:"Power4.easeOut",
+   })
   
-  export {ourCollection}
+    })
+})
+
+}

@@ -79,6 +79,39 @@ width:100%;
 }
 
 
+
+/* ! our collections  */
+
+
+.ourcollections .our_overlay{
+  width: 25vw;
+  height:  25vw;
+  overflow: hidden;
+  position: absolute;
+  transform: translate(0%,-50%);
+  pointer-events: none;
+  z-index: 999;
+  background: #000;
+  opacity: 0;
+  left: 60%;
+  top: 50%;
+}
+
+ .ourcollections .img img{
+ height:400px;
+ width: 400px;
+ pointer-events: none;
+ z-index: 9999;
+
+}
+
+
+
+
+
+
+
+
 /* ! best selling product  */
 
 @font-face {

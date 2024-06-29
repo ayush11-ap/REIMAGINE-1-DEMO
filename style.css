@@ -3,10 +3,12 @@
 @tailwind utilities;
 
 /* styles.css */
-@layer utilities {
-    .stretch-font {
-      @apply inline-block transform origin-center;
-      transform: scaleY(1.5); /* Custom transform */
-    }
+@layer components {
+  .boxsty{
+@apply w-[45vw] hover:opacity-[1] sm:h-[16vh] sm:w-full h-[44vw] mb-3  sm:opacity-70 flex justify-center items-center sm:justify-between sm:px-5 border-b-[1px] relative  border-black
   }
-  
+
+  .paraSty{
+@apply text-black   text-center sm:text-start  text-2xl sm:text-6xl sm:font-semibold sm:uppercase sm:px-5 z-10   sm:transition sm:duration-300 capitalize sm:ease-in-out
+  }
+}

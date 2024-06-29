@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+  <section class="links">
+      
     <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -22,9 +25,10 @@
 
 
 
+  </section>
+  
 </head>
 
-<!--  by deafult body overflow hidden -->
 <body class="overflow-hidden">
    
   <div class="loder  z-[500] w-screen  bg-black  select-none  absolute h-full flex justify-center items-center  overflow-hidden">
@@ -475,10 +479,73 @@
 
 
 
-        <div class="our_Collections bg-red-500 relative h-screen w-screen ">
+           
+    <div class="ourcollections relative bg-white w-screen h-1/2 sm:h-[100vh] flex-wrap overflow-hidden flex">
+      <h1 class="text-4xl font-[yoyo] px-2 py-4 font-medium ">Our Collection </h1>
 
+      <div class="our_overlay sm:block hidden">
+          <div class="elems">
+              <div class="img">
+                  <img src="/assets/home-left.jpg" alt="">
+              </div>s
+              <div class="img">
+                <img src="/assets/home-left.jpg" alt="">
+              </div>
+              <div class="img">
+                <img src="/assets/home-left.jpg" alt="">
+              </div>
+              <div class="img">
+                <img src="/assets/home-left.jpg" alt="">
+              </div>
+              <div class="img">
+                <img src="/assets/home-left.jpg" alt="">
+              </div>
+          </div>
+      </div>
+      
+      
+
+      
+
+      <div class="elem w-screen sm:w-screen justify-around gap-1 sm:flex-col flex">
+          <div data-percent='0%' class="ourBox  boxsty">
+              <p class="paraSty"> incence sticks</p>
+              <img class="object-cover visible sm:hidden h-full w-full absolute opacity-80" src="https://images.unsplash.com/photo-1718915869682-ca85f9e159e7?q=80&w=1893&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <i class="ri-arrow-right-line hidden sm:flex arrow text-8xl opacity-75 font-lighter  z-[100]"></i> 
+          </div>
+          <div data-percent='-98%' class="ourBox boxsty">
+              <p class="paraSty">rejuvenating fragrances</p>
+              <img class="object-cover visible sm:hidden h-full w-full absolute opacity-80" src="https://images.unsplash.com/photo-1718915869682-ca85f9e159e7?q=80&w=1893&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <i class="ri-arrow-right-line hidden sm:flex arrow text-8xl opacity-75 font-lighter  z-[100]"></i>
+          </div>
+      </div>
+      
+      <div  class="elem w-screen sm:w-screen justify-around gap-1 sm:flex-col flex">
+          <div data-percent='-197%' class="ourBox boxsty">
+              <p class="paraSty"> incence cones</p>
+              <img class="object-cover visible sm:hidden h-full w-full absolute opacity-80" src="https://images.unsplash.com/photo-1718915869682-ca85f9e159e7?q=80&w=1893&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <i class="ri-arrow-right-line hidden sm:flex arrow text-8xl opacity-75 font-lighter  z-[100]"></i>
+          </div>
+          <div  data-percent='-297%' class="ourBox
+           boxsty">
+              <p  class="paraSty">luxury fragrances</p>
+              <img class="object-cover visible sm:hidden h-full w-full absolute opacity-80" src="https://images.unsplash.com/photo-1718915869682-ca85f9e159e7?q=80&w=1893&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <i class="ri-arrow-right-line hidden sm:flex arrow text-8xl opacity-75 font-lighter  z-[100]"></i>
+          </div>
+      </div>
+      <div  class="elem w-screen sm:w-screen justify-around gap-1 sm:flex-col flex">
+          <div data-percent='-397%' class="ourBox boxsty">
+              <p class="paraSty"> combo pack</p>
+              <img class="object-cover visible sm:hidden h-full w-full absolute oopacity-80" src="https://images.unsplash.com/photo-1718915869682-ca85f9e159e7?q=80&w=1893&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+              <i class="ri-arrow-right-line hidden sm:flex arrow text-8xl opacity-75 font-lighter  z-[100]"></i>
+          </div>
+      
+      </div>
+
+  </div>
+  
          
-        </div>
+        
 
 
 
@@ -682,7 +749,6 @@
   </div>
 </div>
 
-<footer class=" w-screen ">
 
 <div class="marqueEffect sm:h-[65vh] h-[50vh] w-screen flex justify-center items-center overflow-hidden">
   <div class="marquee">
@@ -773,16 +839,15 @@
 </div>
     
     
-<!-- <div class="page h-screen w-screen bg-slate-400"></div> -->
       
 
   
 </div>
 
-</div>
 
 
-</footer>
+
+
     
     
     
@@ -791,7 +856,7 @@
 
 
 
-    </div>
+
 
     <div class="scripts">
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
